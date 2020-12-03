@@ -7,7 +7,7 @@ class Monster extends Component {
     return (
       <div className='monster'>
        
-        <h1 >{ this.props.monster.name } </h1>
+        <h1 >{ this.props.monster.username} </h1>
       </div>
     )
   }
