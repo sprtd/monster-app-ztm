@@ -11,34 +11,31 @@ class App extends Component {
       error: null
     }
   }
-
+  
   componentDidMount() {
-    console.log('first')
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(res => res.json())
-      
-    
-      .then(users => {
-        console.log(users)
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://jsonplceholder.typicode.com/users')
+        const users = await response.json()  
         return this.setState({
-        monsters: users
+          monsters: users
         })
-      })
-
+      }
+      catch(err) {
+        console.log(err)
+        return this.setState({error: err.message})
+        
+      }
+    }
+    fetchData()
   }
-
-
-  
-    
-     
-    
-  
 
   render() {
     return (
       <div className='container'>
         <h2 >Monster</h2>
-        {this.state.monsters ? this.state.monsters.map(monster => <Monster  key={monster.id} monster={monster} /> ) : <p>Nothing to show</p>}
+        {this.state.monsters.map(monster => <Monster  key={monster.id} monster={monster} />   )}
+        <p>{this.state.error }</p>
       </div>
     )
   }

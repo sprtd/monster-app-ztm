@@ -38,6 +38,12 @@ body {
 
 }
 
+.container p {
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
 .monster {
   display: flex;
 }
