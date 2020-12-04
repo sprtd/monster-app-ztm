@@ -1,0 +1,45 @@
+:root {
+  --card-bg: #95dada;
+
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0)  ;
+  border: 1px grey solid;
+  transition: transform 0.25s ease-out;
+  transition-property: transform;
+
+}
+
+.card-container img {
+  height: 100px;
+  width: 100px;
+  justify-content: center ;
+  margin: 0 auto;
+}
+
+.card-container h1 {
+  text-align: center;
+}
+
+.card-container p {
+  align-items: center;
+  color: rgb(42, 110, 86);
+  font-weight: bold;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card-container :hover {
+  transform: scale(1.05) rotate(-05deg);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+}

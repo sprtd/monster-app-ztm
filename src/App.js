@@ -24,7 +24,7 @@ class App extends Component {
       }
       catch(err) {
         console.log(err)
-        return this.setState({error: err.message})
+        return this.setState({error: `Error: ${err.message}`})
         
       }
     }

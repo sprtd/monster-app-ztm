@@ -16,3 +16,8 @@
 ###### v4
 - [x] refactor code, move the map function to the `CardList` component
 
+
+###### v5
+- [x] create `Card` component as child component of `CardList` component
+- [x] fetch image from robohash website
+
