@@ -8,3 +8,7 @@
 ###### v2 
 - [x] try out async method 
 - [x] catch errors when promise is rejected
+
+###### v3
+- [x] create card-list sub component folder that handles all the listed items
+- [x] implement component styling

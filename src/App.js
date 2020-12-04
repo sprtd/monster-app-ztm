@@ -1,5 +1,6 @@
 import { Component } from 'react'
-import Monster from './Monster'
+import CardList from './components/card-list/card-list.components'
+
 
 class App extends Component {
 
@@ -15,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://jsonplceholder.typicode.com/users')
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
         const users = await response.json()  
         return this.setState({
           monsters: users
@@ -33,9 +34,12 @@ class App extends Component {
   render() {
     return (
       <div className='container'>
-        <h2 >Monster</h2>
-        {this.state.monsters.map(monster => <Monster  key={monster.id} monster={monster} />   )}
+        <h2>Monster</h2>
+        <CardList>
+          {this.state.monsters.map(monster => <h1  key={monster.id} monster={monster} > {monster.name} </h1>   )}
+        </CardList>
         <p>{this.state.error }</p>
+
       </div>
     )
   }
