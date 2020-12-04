@@ -20,4 +20,5 @@
 ###### v5
 - [x] create `Card` component as child component of `CardList` component
 - [x] fetch image from robohash website
+- [x] style UI
 
