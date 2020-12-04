@@ -5,13 +5,17 @@ import CardList from './components/card-list/card-list.components'
 class App extends Component {
 
   constructor() {
+  
     super() 
 
     this.state = {
       monsters: [],
-      error: null
+      error: null,
+      searchField: ''
     }
   }
+  
+
   
   componentDidMount() {
     const fetchData = async () => {
@@ -31,11 +35,35 @@ class App extends Component {
     fetchData()
   }
 
+
+  handleChange = (event) =>{
+    const {value} = event.target
+    this.setState({searchField: value}, () => console.log(this.state))
+  }
+
+  
+
+  onSubmit = event => {
+    event.preventDefault()
+  }
+
   render() {
+    const {monsters, searchField} = this.state
+    const filteredMonsters = monsters.filter( monster =>  {
+        return (
+          monster.name.toLowerCase().includes(searchField.toLowerCase() ) 
+        )
+
+    })
+    
+
     return (
       <div className='container'>
+        <input type='search' placeholder='Search monsters'  value={this.state.searchInput} onChange={this.handleChange}  />
         <h2>Monster</h2>
-        <CardList  monsters={this.state.monsters} />
+        { !filteredMonsters.length  && <p>No matching records found. try again</p> }
+
+        <CardList  monsters={filteredMonsters} />
   
         <p>{this.state.error }</p>
 

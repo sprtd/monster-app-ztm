@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0)  ;
-  border: 1px grey solid;
+  border: 2px grey solid;
   transition: transform 0.25s ease-out;
   transition-property: transform;
 

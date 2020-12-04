@@ -22,3 +22,8 @@
 - [x] fetch image from robohash website
 - [x] style UI
 
+
+
+###### v6
+- [x] create search functionality
+
