@@ -35,9 +35,8 @@ class App extends Component {
     return (
       <div className='container'>
         <h2>Monster</h2>
-        <CardList>
-          {this.state.monsters.map(monster => <h1  key={monster.id} monster={monster} > {monster.name} </h1>   )}
-        </CardList>
+        <CardList  monsters={this.state.monsters} />
+  
         <p>{this.state.error }</p>
 
       </div>

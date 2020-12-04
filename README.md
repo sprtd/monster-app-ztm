@@ -12,3 +12,7 @@
 ###### v3
 - [x] create card-list sub component folder that handles all the listed items
 - [x] implement component styling
+
+###### v4
+- [x] refactor code, move the map function to the `CardList` component
+
