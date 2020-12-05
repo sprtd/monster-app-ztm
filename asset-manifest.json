@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/github.io/monster-app-ztm/static/css/main.e2890151.chunk.css",
-    "main.js": "/github.io/monster-app-ztm/static/js/main.39edbbe0.chunk.js",
-    "main.js.map": "/github.io/monster-app-ztm/static/js/main.39edbbe0.chunk.js.map",
-    "runtime-main.js": "/github.io/monster-app-ztm/static/js/runtime-main.e22788a1.js",
-    "runtime-main.js.map": "/github.io/monster-app-ztm/static/js/runtime-main.e22788a1.js.map",
-    "static/js/2.c30e3195.chunk.js": "/github.io/monster-app-ztm/static/js/2.c30e3195.chunk.js",
-    "static/js/2.c30e3195.chunk.js.map": "/github.io/monster-app-ztm/static/js/2.c30e3195.chunk.js.map",
-    "index.html": "/github.io/monster-app-ztm/index.html",
-    "static/css/main.e2890151.chunk.css.map": "/github.io/monster-app-ztm/static/css/main.e2890151.chunk.css.map",
-    "static/js/2.c30e3195.chunk.js.LICENSE.txt": "/github.io/monster-app-ztm/static/js/2.c30e3195.chunk.js.LICENSE.txt"
+    "main.css": "/monster-app-ztm/static/css/main.e2890151.chunk.css",
+    "main.js": "/monster-app-ztm/static/js/main.39edbbe0.chunk.js",
+    "main.js.map": "/monster-app-ztm/static/js/main.39edbbe0.chunk.js.map",
+    "runtime-main.js": "/monster-app-ztm/static/js/runtime-main.cc911455.js",
+    "runtime-main.js.map": "/monster-app-ztm/static/js/runtime-main.cc911455.js.map",
+    "static/js/2.c30e3195.chunk.js": "/monster-app-ztm/static/js/2.c30e3195.chunk.js",
+    "static/js/2.c30e3195.chunk.js.map": "/monster-app-ztm/static/js/2.c30e3195.chunk.js.map",
+    "index.html": "/monster-app-ztm/index.html",
+    "static/css/main.e2890151.chunk.css.map": "/monster-app-ztm/static/css/main.e2890151.chunk.css.map",
+    "static/js/2.c30e3195.chunk.js.LICENSE.txt": "/monster-app-ztm/static/js/2.c30e3195.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e22788a1.js",
+    "static/js/runtime-main.cc911455.js",
     "static/js/2.c30e3195.chunk.js",
     "static/css/main.e2890151.chunk.css",
     "static/js/main.39edbbe0.chunk.js"
