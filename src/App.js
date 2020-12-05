@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import CardList from './components/card-list/card-list.components'
+import SearchBox from './components/search-box/search-box.component'
 
 
 class App extends Component {
@@ -48,8 +49,9 @@ class App extends Component {
 
     return (
       <div className='container'>
-        <input type='search' placeholder='Search monsters'  value={this.state.searchInput} onChange={this.handleChange}  />
-        <h2>Monster</h2>
+        <h1>Monster Search App</h1>
+
+        <SearchBox handleChange={this.handleChange}  searchField={this.state.searchField} />
         { !filteredMonsters.length  && <p>No matching records found. try again</p> }
 
         <CardList  monsters={filteredMonsters} />

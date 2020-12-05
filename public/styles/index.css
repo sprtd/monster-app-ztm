@@ -6,7 +6,6 @@
 }
 
 body {
-  /* display: flex; */
   margin: 0;
   justify-content: center;
   align-items: center;
@@ -17,7 +16,17 @@ body {
 
 }
 
-/* .container {
-  width: 1000px;
-  max-width: 100%;
-} */
+
+.container h1 {
+  box-sizing: border-box;
+  text-align: center;
+  color: rgb(182, 207, 187);
+}
+.container p {
+  text-align: center;
+  color: rgb(184, 135, 135);
+
+}
+
+
+

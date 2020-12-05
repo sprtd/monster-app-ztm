@@ -27,3 +27,9 @@
 ###### v6
 - [x] create search functionality
 
+
+###### v7
+- [x] modularize `Search` component
+
+
+

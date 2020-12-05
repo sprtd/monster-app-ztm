@@ -28,11 +28,14 @@
 
 .card-container h1 {
   text-align: center;
+  color: rgb(24, 71, 55);
+
 }
 
 .card-container p {
   align-items: center;
-  color: rgb(42, 110, 86);
+  color: rgba(14, 41, 31, 0.534);
+
   font-weight: bold;
   justify-content: center;
   margin: 0 auto;
