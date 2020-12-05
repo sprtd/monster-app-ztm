@@ -6,7 +6,6 @@ import SearchBox from './components/search-box/search-box.component'
 class App extends Component {
 
   constructor() {
-  
     super() 
 
     this.state = {
@@ -14,6 +13,7 @@ class App extends Component {
       error: null,
       searchField: ''
     }
+
   }
   
 
@@ -37,7 +37,7 @@ class App extends Component {
   }
 
 
-  handleChange = (event) =>{
+  handleChange = (event) => {
     const {value} = event.target
     this.setState({searchField: value}, () => console.log(this.state))
   }
@@ -51,7 +51,7 @@ class App extends Component {
       <div className='container'>
         <h1>Monster Search App</h1>
 
-        <SearchBox handleChange={this.handleChange}  searchField={this.state.searchField} />
+        <SearchBox handleChange={this.handleChange}  searchField={this.state.searchField} placeholder='Search monsters' />
         { !filteredMonsters.length  && <p>No matching records found. try again</p> }
 
         <CardList  monsters={filteredMonsters} />
